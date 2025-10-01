@@ -9,13 +9,13 @@
     docker build . -t timnord1993/todoapp:3.0.0
     
 ### 1.3. Applying clusterIp service.
-    cubectl apply -f clusterIp.yml -n todoapp
+    cubectl apply -f clusterip.yml -n todoapp
 
 ### 1.4. Applying pods.
     cubectl apply -f todoapp-pod.yml -n todoapp
 
 ### 1.5. Testing.
-    kubectl port-forward service/clusterIp 8081:80
+    kubectl port-forward service/clusterip 8081:80
 
 
 ## 2. NodePort service.
